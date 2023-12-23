@@ -1,35 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/images/favicon-32x32.png"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Figtree" />
+  <title>Frontend Mentor | Blog preview card</title>
 
-    <title>Frontend Mentor | Blog preview card</title>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      width: 100%;
+      background-color: hsl(47, 88%, 63%);
+      font-family: "Figtree", sans-serif;
+    }
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-      body {
-        width: 100%;
-        background-color: hsl(47, 88%, 63%);
-      }
-    </style>
-  </head>
-  <body>
-    <div class="card"></div>
-  </body>
+    .card {
+      max-width: 450px;
+      margin: 16vh auto;
+      height: 68vh;
+      background-color: hsl(0, 0%, 100%);
+      border-radius: 20px;
+      box-shadow: 10px 10px hsl(0, 0%, 7%);
+    }
+
+    .card-header-image {
+      margin: 5% 5% 5% 5%;
+      width: 90%;
+      border-radius: 20px;
+    }
+
+    .text-btn {
+      margin: 0% 5%;
+    }
+
+    .btn-learn {
+      background-color: hsl(47, 88%, 63%);
+      padding: 5px 12px;
+      border: 1px solid white;
+      font-weight: 800;
+    }
+
+    .text-pub {
+      font-weight: 400;
+    }
+
+    .para1 {
+      color: hsl(0, 0%, 50%);
+      font-size: 22px;
+    }
+
+    .footer {
+      display: flex;
+      margin: 0% 5%;
+    }
+
+    .img-name {
+      margin-left: 20px;
+      font-weight: 800;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card">
+    <div class="image">
+      <img src="./illustration-article.svg" class="card-header-image" />
+    </div>
+    <div class="text-btn">
+      <button class="btn-learn">Learning</button>
+      <p class="'text-pub">Publish 21 December 2023</p>
+      <h2>HTML & CSS foundations</h1>
+        <p class="para1"> These languages are backbone of every <br /> website,defining structure,content, and
+          presentation.</p>
+    </div>
+    <div class="footer">
+      <img src="./image-avatar.webp" alt="image" class="foot-img" />
+      <p class="img-name"> Greg Hooper </p>
+    </div>
+  </div>
+</body>
+
 </html>
